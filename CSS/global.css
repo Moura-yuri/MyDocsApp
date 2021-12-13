@@ -1,3 +1,61 @@
+/* Reset do CSS
+Faz com que a página apareça sempre igual em qualquer navegador moderno.
+*/
+
+:root {
+    /* Define fonte padrão e medida da unidade 'rem' */
+    font-family: sans-serif;
+    font-size: 16px;
+    /* Variáveis */
+    --bg-color: rgb(0, 14, 36);
+    --bg-image: url("../assets/img/background_01.jpg");
+}
+
+* {
+    /* Margin e padding não interferem em width e height */
+    box-sizing: border-box;
+    /* Remover bordas de elementos selecionados */
+    outline: none;
+    /* Aplica atraso em efeitos de transição */
+    transition: .2s;
+}
+
+body, html {
+    /* Força posicionamento relativo para aplicar width e height */
+    position: relative;
+    /* Remove margem e enchimento */
+    padding: 0;
+    margin: 0;
+    /* Ocupar tela inteira */
+    width: 100%;
+    height: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6, blockquote {
+    margin: 0;
+    padding: .9rem 0;
+}
+
+blockquote {
+    margin-left: 3rem;
+}
+
+a {
+    color: steelblue;
+    text-decoration: stroke;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* Fundo da página */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
