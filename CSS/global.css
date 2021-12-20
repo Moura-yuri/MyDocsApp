@@ -1,6 +1,3 @@
-/* Variáveis
- * Define algumas configurações iniciais para o app.
- */
 
  :root {
     --font-family: sans-serif;
@@ -287,4 +284,4 @@ div.footer-bottom a:hover {
 div.footer-bottom a i {
     font-size: 1.2rem;
     margin-right: .25rem;
-}
+} 
