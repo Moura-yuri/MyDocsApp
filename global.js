@@ -8,7 +8,7 @@
  */
 
 // URL da API REST (back-end). Não esqueça da "/" no final. 
-const apiURL = 'http://localhost:3300/';
+const apiURL = 'http://10.136.61.4:3300/';
 
 /**
  * Super global que armazena as configurações gerais do aplicativo, obtidas do 
@@ -426,7 +426,7 @@ function getSocialList(element, fullList = false) {
                             // Monta a view.
                             socialList += `
                                 <a href="${data[i].href}" target="_blank" title="Meu ${data[i].name}">
-                                    <i class="fab ${data[i].icon} fa-fw"></i><span>${data[i].name}</span>
+                                    <i class="${data[i].icon}"></i><span>${data[i].name}</span>
                                 </a>                        
                             `;
 
@@ -439,7 +439,7 @@ function getSocialList(element, fullList = false) {
                                 // Monta a view.
                                 socialList += `
                                     <a href="${data[i].href}" target="_blank" title="Meu ${data[i].name}">
-                                        <i class="fab ${data[i].icon} fa-fw"></i><span>${data[i].name}</span>
+                                        <i class="${data[i].icon}"></i><span>${data[i].name}</span>
                                     </a>                        
                                 `;
                             }
